@@ -75,7 +75,7 @@ jobs:
           template-vars: |
             login: ${{ github.actor }}
             issue_url: ${{ inputs.issue-url }}
-            encoded_socials_text: ${{ steps.encode-socials-text.outputs.encoded-text }}
+            encoded_socials_text: "${{ steps.encode-socials-text.outputs.encoded-text }}"
 
       - name: README 덮어쓰기
         env:
