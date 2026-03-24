@@ -1,33 +1,33 @@
 {{#passed}}
 
-## Step {{ step_number }} - Passed ✅
+## 단계 {{ step_number }} - 통과 ✅
 
 {{/passed}}
 {{^passed}}
 
-## Step {{ step_number }} - Fail ❌
+## 단계 {{ step_number }} - 실패 ❌
 
 {{/passed}}
 
 {{#passed}}
-<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="Inflatocat image indicating the step passed" />
+<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="단계 통과를 나타내는 Inflatocat 이미지" />
 {{/passed}}
 {{^passed}}
-<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="Spidertocat image indicating the step failed" />
-Some checks failed. Please review the results below and try again.
+<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="단계 실패를 나타내는 Spidertocat 이미지" />
+일부 검사가 실패했습니다. 아래 결과를 확인하고 다시 시도해 주세요.
 
-Time to find the bug! 🤔
+버그를 찾아봅시다! 🤔
 {{/passed}}
 
-| Status | Description |
+| 상태 | 설명 |
 | --- | --- |
 {{#results_table}}
-| {{#passed}}✅ - Pass{{/passed}}{{^passed}}❌ - Fail{{/passed}} | {{ description }} |
+| {{#passed}}✅ - 통과{{/passed}}{{^passed}}❌ - 실패{{/passed}} | {{ description }} |
 {{/results_table}}
 
 {{#tips.length}}
 
-### Tips
+### 팁
 
 {{#tips}}
 

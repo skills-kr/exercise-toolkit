@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   find_exercise:
-    name: Find exercise by issue title
+    name: 이슈 제목으로 실습 찾기
     runs-on: ubuntu-latest
 
     outputs:
