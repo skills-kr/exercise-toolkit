@@ -65,7 +65,7 @@ jobs:
       - name: 응답 템플릿 가져오기
         uses: actions/checkout@v4
         with:
-          repository: gh-skills-kr/exercise-toolkit
+          repository: skills-kr/exercise-toolkit
           path: exercise-toolkit
           ref: ${{ env.EXERCISE_TOOLKIT_REF }}
 
@@ -108,7 +108,7 @@ jobs:
       - name: 응답 템플릿 가져오기
         uses: actions/checkout@v4
         with:
-          repository: gh-skills-kr/exercise-toolkit
+          repository: skills-kr/exercise-toolkit
           path: exercise-toolkit
           ref: ${{ env.EXERCISE_TOOLKIT_REF }}
 
